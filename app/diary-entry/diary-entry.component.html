@@ -1,0 +1,7 @@
+<div *ngIf="entries">
+  <div *ngFor="let entry of entries">
+    <h2>{{entry.title}}</h2><span>{{entry.dated}}</span>
+    <p>{{entry.message}}</p>
+    <span *ngIf="entry.mediaUrl">{{entry.mediaUrl}}</span>
+  </div>
+</div>
