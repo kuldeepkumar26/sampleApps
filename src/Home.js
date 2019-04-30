@@ -5,7 +5,8 @@ import mydiary from './mydiary.jpg';
 
 class Home extends Component {
     render() {
-        return (<div className="container bootstrap snippet">
+        return (
+        <div className="container bootstrap snippet">
             <div className="row">
                 <div className="panel">
                     <div className="cover-photo">
@@ -17,13 +18,14 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="panel-body">
-                        <div className="profile-thumb" id="imageDiv">
+                        <div className="profile-thumb" id=" " >
                             <img src={happyMom} alt=""/>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>)
+        </div>
+        )
     }
 }
 
