@@ -2,6 +2,8 @@ import React from 'react';
 import { Component } from 'react';
 import happyMom from './happyMom.jpg';
 import mydiary from './mydiary.jpg';
+import HomeCss from './Home.css';
+import Panel from './Panel.js';
 
 class Home extends Component {
     render() {
@@ -18,11 +20,12 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="panel-body">
-                        <div className="profile-thumb" id=" " >
+                        <div className="profile-thumb" id="imageDiv" >
                             <img src={happyMom} alt=""/>
                         </div>
                     </div>
                 </div>
+                <Panel></Panel>
             </div>
         </div>
         )

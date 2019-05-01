@@ -1,0 +1,6 @@
+#panelBody {
+    border: thin solid grey;
+    border-radius:12px;
+    outline:20 px solid #CCC;
+    margin-bottom:10px;
+}
