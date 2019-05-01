@@ -4,3 +4,28 @@
     outline:20 px solid #CCC;
     margin-bottom:10px;
 }
+
+
+.fb-user-thumb >img {
+    float: left;
+    width: 70px;
+    margin-right: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.fb-user-details h3 {
+    margin: 15px 0 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+.fb-user-details p {
+    color: #c3c3c3;
+    margin: 0 0 10px;
+}
+
+#imageInPanel {
+    height: 400px;
+    width: 400px;
+    margin-right: 1em;
+}
