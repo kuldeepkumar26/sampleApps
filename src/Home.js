@@ -2,20 +2,20 @@ import React from 'react';
 import { Component } from 'react';
 import happyMom from './happyMom.jpg';
 import mydiary from './mydiary.jpg';
-import HomeCss from './Home.css';
+import './Home.css';
 import Panel from './Panel.js';
 
 class Home extends Component {
     render() {
         return (
         <div className="container bootstrap snippet">
-            <div className="row">
+            <div className="row1">
                 <div className="panel">
                     <div className="cover-photo">
-                        <div className="fb-timeline-img">
+                        <div className="fbTimelineImg">
                             <img src={mydiary} alt=""/>
                         </div>
-                        <div className="fb-name">
+                        <div className="fbName">
                             <h3 id="patientName">Lake Sharma</h3>
                         </div>
                     </div>
@@ -25,6 +25,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                <div style={{height :'30px'}}></div>
                 <Panel></Panel>
             </div>
         </div>

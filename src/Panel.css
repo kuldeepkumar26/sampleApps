@@ -5,8 +5,19 @@
     margin-bottom:10px;
 }
 
+.cover-photo {
+    position: relative;
+}
+.panel-body {
+    padding: 15px;
+}
 
-.fb-user-thumb >img {
+.fbUserThumb {
+    float: left;
+    width: 70px;
+    margin-right: 15px;
+}
+.fbUserThumb img {
     float: left;
     width: 70px;
     margin-right: 15px;
@@ -14,12 +25,12 @@
     -webkit-border-radius: 50%;
 }
 
-.fb-user-details h3 {
+.fbUserDetails  h3{
     margin: 15px 0 0;
     font-size: 18px;
     font-weight: 300;
 }
-.fb-user-details p {
+.fbUserDetails p {
     color: #c3c3c3;
     margin: 0 0 10px;
 }
@@ -28,4 +39,8 @@
     height: 400px;
     width: 400px;
     margin-right: 1em;
+}
+
+.circular-progress {
+    height: 50px;
 }

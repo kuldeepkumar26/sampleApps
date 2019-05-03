@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.fb-timeline-img >img{
+.fbTimelineImg >img{
     width: 100%;
     border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
@@ -17,8 +17,27 @@
     border: 3px solid #fff;
 }
 
-.fb-name {
+.fbName {
     bottom: 5px;
     left: 175px;
     position: absolute;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.profile-thumb {
+    float: left;
+    position: relative;
+}
+
+.row1 {
+    margin-right: -15px;
+    margin-left: -15px;
 }

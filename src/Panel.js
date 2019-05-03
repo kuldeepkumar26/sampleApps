@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import css from './Panel.css';
+import './Panel.css';
 import BabyGif from './baby.gif';
-//import fetch from 'fetch';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 class Panel extends Component {
     constructor(props) {
@@ -24,21 +24,25 @@ class Panel extends Component {
             } catch(ex) {
                 data = []
             }
-            this.setState({
-                isLoading: false,
-                data: data
-            })
+            // setTimeout(this.setState.bind(this,{
+            //     isLoading: false,
+            //     data: data
+            // }), 5000)
+            // this.setState({
+            //     isLoading: false,
+            //     data: data
+            // })
         });
     }
     render() {
         var child = null;
         if(this.state.isLoading) {
-            child = <div>loading..................</div>
+            child = <div><CircularProgress className="circular-progress" /></div>
         } else {
             child =  <PanelItems data={this.state.data}></PanelItems>
         }
         return (
-            <div id="allDiaryDiv" className={css.panel}>
+            <div id="allDiaryDiv" className="panel">
             {child}
             </div>
         )
@@ -59,7 +63,6 @@ class PanelItems extends Component {
             var elem = null;
             if(element.mediaURL) {
                 var typeOfMedia = this.checkMediaType(element.mediaURL);
-                console.log("RRRRRRRR", typeOfMedia)
                 if (typeOfMedia === 2) {
                     elem = <audio src={element.mediaURL} controls="controls"></audio>
                 } else {
@@ -68,19 +71,19 @@ class PanelItems extends Component {
               } 
             return (
                 <div key={element.id}> 
-                <div  className={css.panelBody} id="panelBody" >
-                <div className={css.fbUserThumb}>
+                <div  className="panelBody" id="panelBody" >
+                <div className="fbUserThumb">
                     <img src={BabyGif} alt=""/>
                 </div>
-                <div className={css.fbUserDetails}>
+                <div className="fbUserDetails">
                     <h3 id="title">{element.title}</h3>
                     <p id="date">{element.dated}</p>
                     {elem}
                 </div>
-                <div className={css.clearfix}></div>
+                <div className="clearfix"></div>
                 <div>
                     <img id="image" alt=""/>
-                    <p className={css.fbUserStatus} id="message">{element.message}</p>
+                    <p className="fbUserStatus" id="message">{element.message}</p>
                 </div>
             </div>
             </div>
